@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>iPhone Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="credit">Muhammad Ahmad</div>
+			<div class="credit">F2023266255</div>
+			<div class="display">
+				<input id="disp" type="text" readonly />
+			</div>
+			<div class="buttons">
+				<button onclick="clearDisplay()" class="button light">AC</button>
+				<button onclick="toggleSign()" class="button light">+/-</button>
+				<button onclick="percent()" class="button light">%</button>
+				<button onclick="appendToDisplay('/')" class="button orange">÷</button>
+				<button onclick="appendToDisplay('7')" class="button dark">7</button>
+				<button onclick="appendToDisplay('8')" class="button dark">8</button>
+				<button onclick="appendToDisplay('9')" class="button dark">9</button>
+				<button onclick="appendToDisplay('*')" class="button orange">×</button>
+				<button onclick="appendToDisplay('4')" class="button dark">4</button>
+				<button onclick="appendToDisplay('5')" class="button dark">5</button>
+				<button onclick="appendToDisplay('6')" class="button dark">6</button>
+				<button onclick="appendToDisplay('-')" class="button orange">-</button>
+				<button onclick="appendToDisplay('1')" class="button dark">1</button>
+				<button onclick="appendToDisplay('2')" class="button dark">2</button>
+				<button onclick="appendToDisplay('3')" class="button dark">3</button>
+				<button onclick="appendToDisplay('+')" class="button orange">+</button>
+				<button onclick="reload()" class="button dark" disabled>
+				<button onclick="appendToDisplay('0')" class="button dark">0</button>
+				<button onclick="appendToDisplay('.')" class="button dark">.</button>
+				<button onclick="calculate()" class="button orange">=</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
